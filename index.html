@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>A Little Something Is Coming — Baby Shower Invitation</title>
+<meta name="description" content="One little arrival. A million little reasons to celebrate. A cinematic digital baby shower invitation — 24 August 2026." />
+<meta property="og:title" content="A Little Something Is Coming…" />
+<meta property="og:description" content="One little arrival. A million little reasons to celebrate." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<canvas id="atmosphere" aria-hidden="true"></canvas>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<!-- ============ OPENING ============ -->
+<div class="opening" id="opening">
+  <div class="opening__bg" style="background-image:url('img/hero.jpg')"></div>
+  <div class="opening__veil"></div>
+  <div class="opening__inner">
+    <h1 class="opening__title">
+      <span class="ow"><em>A LITTLE</em></span>
+      <span class="ow"><em>SOMETHING</em></span>
+      <span class="ow"><em>IS COMING…</em></span>
+    </h1>
+    <div class="opening__rule"><i></i></div>
+    <p class="opening__sub">AND WE CAN'T WAIT TO MEET IT.</p>
+    <p class="opening__hint">scroll gently</p>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ ARRIVAL STATUS ============ -->
+  <section class="sec sec--status" id="status">
+    <div class="status-card">
+      <div class="status-card__meta">
+        <span>ARRIVAL</span><span class="dotline"></span><span>STATUS</span>
+      </div>
+      <div class="orbit">
+        <svg viewBox="0 0 220 220">
+          <circle class="orbit__track" cx="110" cy="110" r="96" />
+          <circle class="orbit__prog" id="orbitProg" cx="110" cy="110" r="96" />
+        </svg>
+        <div class="orbit__dot" id="orbitDot"></div>
+        <div class="orbit__label">
+          <span class="orbit__state" id="orbitState">COMING SOON</span>
+          <span class="orbit__pct" id="orbitPct">00</span>
+        </div>
+      </div>
+      <p class="status-card__note" id="statusNote">tiny human loading…</p>
+    </div>
+  </section>
+
+  <!-- ============ HERO ============ -->
+  <section class="sec sec--hero" id="hero">
+    <div class="hero__petals" id="petals" aria-hidden="true"></div>
+    <p class="eyebrow">EST. 2026 &nbsp;·&nbsp; A PRIVATE CELEBRATION</p>
+    <h2 class="hero__title"><span>BABY</span><span>SHOWER</span></h2>
+    <p class="hero__script">a celebration before the little one arrives</p>
+    <div class="hero__line"></div>
+    <button class="egg egg--star" data-egg="You found a little secret ✨" aria-label="hidden star"><i class="fa-regular fa-star"></i></button>
+  </section>
+
+  <!-- ============ LITTLE MOMENTS ============ -->
+  <section class="sec sec--moments" id="moments">
+    <header class="sechead">
+      <span class="sechead__num">01</span>
+      <h3 class="sechead__title">THE LITTLE THINGS<br />WE'RE WAITING FOR</h3>
+    </header>
+    <ul class="moments">
+      <li class="moment moment--mask" data-img="img/moment1.jpg">
+        <span class="moment__idx">i</span>
+        <h4>THE FIRST HELLO</h4>
+        <p>the sound that rewrites everything</p>
+        <div class="moment__img"><img src="img/moment1.jpg" alt="Soft folded linen in warm light" loading="lazy" /></div>
+      </li>
+      <li class="moment moment--light" data-img="img/moment2.jpg">
+        <span class="moment__idx">ii</span>
+        <h4>THE FIRST SMILE</h4>
+        <p>unearned, unhurried, undeserved</p>
+        <div class="moment__img"><img src="img/moment2.jpg" alt="Eucalyptus shadow on ivory wall" loading="lazy" /></div>
+      </li>
+      <li class="moment moment--clip" data-img="img/moment3.jpg">
+        <span class="moment__idx">iii</span>
+        <h4>THE FIRST LITTLE HAND</h4>
+        <p>five impossible fingers</p>
+        <div class="moment__img"><img src="img/moment3.jpg" alt="Knitted booties on champagne silk" loading="lazy" /></div>
+      </li>
+      <li class="moment moment--blur" data-img="img/moment4.jpg">
+        <span class="moment__idx">iv</span>
+        <h4>THE FIRST MEMORY</h4>
+        <p>the one we'll keep retelling</p>
+        <div class="moment__img"><img src="img/moment4.jpg" alt="Warm candlelight bokeh" loading="lazy" /></div>
+      </li>
+    </ul>
+    <p class="moments__whisper">the smallest guest is already the main character.</p>
+  </section>
+
+  <!-- ============ DATE ============ -->
+  <section class="sec sec--date" id="date">
+    <header class="sechead">
+      <span class="sechead__num">02</span>
+      <h3 class="sechead__title">MARK THE LITTLE DATE</h3>
+    </header>
+
+    <div class="cal-stage">
+      <div class="calendar" id="calendar">
+        <div class="calendar__head"><span>AUGUST</span><span>2026</span></div>
+        <div class="calendar__dow"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+        <div class="calendar__grid" id="calGrid"></div>
+        <p class="calendar__cta">tap the glowing day</p>
+      </div>
+
+      <div class="bigdate" id="bigdate" aria-hidden="true">
+        <span class="bigdate__m">AUGUST</span>
+        <span class="bigdate__d">24</span>
+        <span class="bigdate__y">2026</span>
+        <span class="bigdate__t">BABY SHOWER</span>
+        <p class="bigdate__begin">THE COUNTDOWN BEGINS.</p>
+        <div class="countdown" id="countdown">
+          <div><b data-cd="d">00</b><i>days</i></div>
+          <div><b data-cd="h">00</b><i>hours</i></div>
+          <div><b data-cd="m">00</b><i>minutes</i></div>
+          <div><b data-cd="s">00</b><i>seconds</i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIME ============ -->
+  <section class="sec sec--time" id="time">
+    <header class="sechead">
+      <span class="sechead__num">03</span>
+      <h3 class="sechead__title">TURN THE LITTLE HOUR</h3>
+    </header>
+    <div class="dial" id="dial">
+      <svg class="dial__face" viewBox="0 0 300 300">
+        <circle cx="150" cy="150" r="132" class="dial__ring" />
+        <g id="ticks"></g>
+        <line id="dialHand" x1="150" y1="150" x2="150" y2="44" class="dial__hand" />
+      </svg>
+      <button class="dial__knob" id="dialKnob" aria-label="Drag to the event hour"></button>
+      <div class="dial__center">
+        <span id="dialRead">— : —</span>
+        <em id="dialHint">drag the dial</em>
+      </div>
+    </div>
+    <p class="time-reveal" id="timeReveal">SEE YOU THERE. <b>4:00 PM</b></p>
+  </section>
+
+  <!-- ============ VENUE ============ -->
+  <section class="sec sec--venue" id="venue">
+    <header class="sechead">
+      <span class="sechead__num">04</span>
+      <h3 class="sechead__title">WHERE THE CELEBRATION BEGINS</h3>
+    </header>
+
+    <div class="veil-stage" id="veilStage">
+      <div class="veil-stage__under" style="background-image:url('img/venue.jpg')"></div>
+      <div class="veil-stage__glow"><span class="pinpoint"></span></div>
+      <div class="veil-stage__curtain" id="veilCurtain">
+        <span class="veil-stage__handle"><i class="fa-solid fa-arrow-right-long"></i> drag</span>
+      </div>
+    </div>
+
+    <div class="venue-info" id="venueInfo">
+      <h4>THE OLIVE COURT</h4>
+      <p>Garden Terrace &nbsp;·&nbsp; 14 Marigold Lane, Clifton</p>
+      <button class="linkbtn" id="openMap"><span>OPEN MAP</span><i class="fa-solid fa-location-dot"></i></button>
+    </div>
+
+    <div class="artmap" id="artmap" hidden>
+      <svg viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet">
+        <path class="artmap__soft" d="M40 330 C 220 300 260 200 430 190 S 720 150 870 90" />
+        <path class="artmap__route" id="route" d="M70 350 C 250 330 280 220 450 205 S 730 170 840 110" />
+        <circle class="artmap__start" cx="70" cy="350" r="6" />
+        <circle class="artmap__end" cx="840" cy="110" r="9" />
+        <text x="70" y="382" class="artmap__t">YOU</text>
+        <text x="784" y="90" class="artmap__t">THE OLIVE COURT</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ GUEST ============ -->
+  <section class="sec sec--guest" id="guest">
+    <h3 class="guest__head">AND YOU'RE PART<br />OF THE STORY.</h3>
+    <p class="guest__copy">
+      Before the little one arrives,<br />
+      there's one more beautiful memory<br />
+      we'd love to make together.
+    </p>
+    <p class="guest__stamp"><span>YOU'RE</span><span>INVITED.</span></p>
+    <button class="egg egg--dot" data-egg="tiny detail, big moment." aria-label="hidden dot"></button>
+  </section>
+
+  <!-- ============ WISHES ============ -->
+  <section class="sec sec--wishes" id="wishes">
+    <header class="sechead">
+      <span class="sechead__num">05</span>
+      <h3 class="sechead__title">A LITTLE WISH</h3>
+    </header>
+    <div class="wishgrid" id="wishGrid">
+      <article class="wish" tabindex="0"><span class="wish__front">open</span><div class="wish__back"><p>Write a little wish for the little one…</p></div></article>
+      <article class="wish" tabindex="0"><span class="wish__front">open</span><div class="wish__back"><p>Write a little wish for the little one…</p></div></article>
+      <article class="wish" tabindex="0"><span class="wish__front">open</span><div class="wish__back"><p>Write a little wish for the little one…</p></div></article>
+    </div>
+
+    <form class="wishform" id="wishForm" autocomplete="off">
+      <div class="field"><label for="wname">YOUR NAME</label><input id="wname" name="name" required maxlength="40" placeholder="who is wishing" /></div>
+      <div class="field"><label for="wmsg">YOUR WISH</label><textarea id="wmsg" name="wish" required maxlength="160" rows="2" placeholder="a short, soft sentence"></textarea></div>
+      <button type="submit" class="linkbtn"><span>SEND THE WISH</span><i class="fa-regular fa-paper-plane"></i></button>
+    </form>
+    <p class="wishform__thanks" id="wishThanks">kept safely, until the little one can read it.</p>
+  </section>
+
+  <!-- ============ DETAILS ============ -->
+  <section class="sec sec--details" id="details">
+    <header class="sechead">
+      <span class="sechead__num">06</span>
+      <h3 class="sechead__title">THE LITTLE DETAILS</h3>
+    </header>
+    <dl class="details">
+      <div class="details__row"><dt>THE DATE</dt><dd>24 AUGUST 2026</dd></div>
+      <div class="details__row"><dt>THE TIME</dt><dd>4:00 PM</dd></div>
+      <div class="details__row"><dt>THE PLACE</dt><dd>THE OLIVE COURT</dd></div>
+      <div class="details__row"><dt>THE DRESS CODE</dt><dd>SOFT NEUTRALS</dd></div>
+      <div class="details__row"><dt>THE RSVP</dt><dd>BY 10 AUGUST</dd></div>
+    </dl>
+    <p class="details__micro" id="microEgg" data-msgs='["currently accepting cuddles.","something tiny is coming.","tiny human loading…","bring your softest hello."]'>currently accepting cuddles.</p>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="sec sec--rsvp" id="rsvp">
+    <h3 class="rsvp__head">WILL YOU BE THERE?</h3>
+    <div class="rsvp__choices" id="rsvpChoices">
+      <button class="choice choice--yes" data-answer="yes">YES, I'LL BE THERE</button>
+      <button class="choice choice--maybe" data-answer="maybe">I'LL LET YOU KNOW</button>
+    </div>
+    <p class="rsvp__result" id="rsvpResult"></p>
+    <div class="rsvp__sparks" id="rsvpSparks" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ FINALE ============ -->
+  <section class="sec sec--finale" id="finale">
+    <div class="finale__glow"></div>
+    <div class="finale__lines">
+      <p class="fl">ONE LITTLE ARRIVAL.</p>
+      <p class="fl">A MILLION LITTLE REASONS TO CELEBRATE.</p>
+      <p class="fl fl--big">WE CAN'T WAIT TO MEET YOU.</p>
+    </div>
+    <a class="cta" href="#rsvp"><span>RSVP &amp; JOIN THE CELEBRATION</span></a>
+    <p class="finale__close">Until then, we'll be counting the little moments.</p>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
